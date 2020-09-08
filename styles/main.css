@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'DM Serif Display', serif;
+}
+
+h1, h2 {
+  font-size: 4rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-bar, header, section, footer {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.dark-button, .white-button {
+  font-weight: 700;
+  border-style: solid;
+  border-width: 2px;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+}
+
+.white-button {
+  color: white;
+  border-color: white;
+}
+
+.white-button:hover {
+  background-color: white;
+  color: #2d2640;
+}
+
+.dark-button {
+  color: #2b282f;
+  border-color: #2b282f;
+}
+
+.dark-button:hover {
+  background-color: #2b282f;
+  color: white;
+}
+
+hr {
+  width: 150px;
+  margin: 0;
+}
+
+.top-bar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-bar img {
+  width: 112px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.top-bar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-bar li {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: inline;
+  padding-right: 1.5rem;
+}
+
+.top-bar li a {
+  color: #808082;
+}
+
+.top-bar li a:hover {
+  color: #2b282f;
+}
+
+header {
+  background-color: #2d2640;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 310px;
+}
+
+header img {
+  margin-bottom: -110px;
+  margin-top: 110px;
+  width: 100%;
+  height: auto;
+}
+
+header .header-text {
+  padding-right: 1rem;
+}
+
+header p {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 210px;
+}
+
+section .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+}
+
+.card p {
+  color: #808082;
+}
+
+.how-we-work {
+  height: 250px;
+  margin-left: 160px;
+  margin-right: 160px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: #2d2640;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.how-we-work h2 {
+  font-size: 3rem;
+  margin: 0;
+  width: 50%;
+}
+
+footer {
+  background-color: #fafafa;
+  padding-bottom: 3rem;
+}
+
+footer .footer-top {
+  padding: 2rem 0 1rem 0;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #d9d9d9;
+}
+
+footer .footer-top img {
+  width: 112px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer .footer-top li {
+  display: inline;
+  padding-left: 5px;
+}
+
+footer .footer-top a {
+  color: #808082;
+}
+
+footer .footer-top a:hover {
+  color: black;
+}
+
+footer .footer-bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+footer .footer-bottom li:nth-child(1) {
+  color: #808082;
+  padding-bottom: 2rem;
+}
+
+footer .footer-bottom ul {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+footer .footer-bottom ul li {
+  padding-bottom: 1rem;
+}
+
+footer .footer-bottom a {
+  color: black;
+}
+
+footer .footer-bottom a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,228 @@
+// Headings font
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+// Body font
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+$colors: (
+    //primary
+    dark-violet: hsl(256, 26%, 20%),
+    gray-blue:hsl(216, 30%, 68%),
+    //neutral
+    v-dark-violet: hsl(270, 9%, 17%),
+    dark-gray-violet: hsl(273, 4%, 51%),
+    v-light-gray: hsl(0, 0%, 98%),
+    //custom
+    gray: #d9d9d9,
+    dark-gray: #808082,
+    almost-black: #2b282f
+);
+
+@function color ($color-name){
+    @return map-get($colors, $color-name);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+}
+
+// Core rules
+
+h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', serif;
+}
+
+h1, h2 {
+    font-size: 4rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-bar, header, section, footer {
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.dark-button, .white-button {
+    font-weight: 700;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+}
+
+.white-button {
+    color: white;
+    border-color: white;
+    &:hover {
+        background-color: white;
+        color: color(dark-violet);
+    }
+}
+
+.dark-button
+{
+    color: color(almost-black);
+    border-color: color(almost-black);
+    &:hover {
+        background-color: color(almost-black);
+        color: white;
+    }
+}
+
+hr {
+    width: 150px;
+    margin: 0;
+}
+
+//
+
+.top-bar {
+    img {
+        width: 112px;
+        object-fit: contain;
+    }
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    nav {
+        display: flex;
+        align-items: center;
+    }
+    li {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.8rem;
+        display: inline;
+        padding-right: 1.5rem;
+        a {
+            color: color(dark-gray);
+            &:hover {
+                color: color(almost-black);
+            }
+        }
+    }
+}
+
+header {
+    background-color: color(dark-violet);
+    color: white;
+    display: flex;
+    align-items: center;
+    img {
+        margin-bottom: -110px;
+        margin-top: 110px;
+        width: 100%;
+        height: auto;
+    }
+    margin-bottom: 310px;
+    .header-text {
+        padding-right: 1rem;
+    }
+    p {
+        line-height: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+section {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1rem;
+    }
+    margin-bottom: 210px;
+}
+
+.card {
+    h3 {
+        font-size: 1.8rem;
+    }
+    p {
+        color: color(dark-gray);
+    }
+}
+
+.how-we-work {
+    h2 {
+        font-size: 3rem;
+        margin: 0;
+        width: 50%;
+    }
+    height: 250px;
+    margin-left: 160px;
+    margin-right: 160px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: color(dark-violet);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer {
+    background-color: color(v-light-gray);
+    padding-bottom: 3rem;
+    .footer-top {
+        padding: 2rem 0 1rem 0;
+        margin-bottom: 2rem;
+        img {
+            width: 112px;
+            object-fit: contain;
+        }
+        display: flex;
+        justify-content: space-between;
+        li {
+            display: inline;
+            padding-left: 5px;
+        }
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-color: color(gray);
+        a {
+            color: color(dark-gray);
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    .footer-bottom {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        li:nth-child(1) {
+            color: color(dark-gray);
+            padding-bottom: 2rem;
+        }
+        ul {
+            width: fit-content;
+            text-transform: uppercase;
+            font-weight: 700;
+            li {
+                padding-bottom: 1rem;
+            }
+        }
+        a {
+            color: black;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
